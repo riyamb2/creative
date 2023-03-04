@@ -29,7 +29,7 @@ export default function AddCreative({color,addCardDetail,handleShowDetail}) {
     }
   return (
     <div style={{    border: '2px solid black',
-    padding: '16px',gap:"10px"}} >
+    padding: '16px',gap:"10px",width:'420px'}} >
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline"}}>
        <h3>Creative Creation</h3> 
        <span className="close"  onClick={handleShowDetail}>&times;</span>
