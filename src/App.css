@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+
+
+button{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+button:disabled{
+  background: gray;
+}
+h5{
+  margin: 10px;
+}
+.success {
+  border-color: #04AA6D;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.success:hover {
+  background-color: #04AA6D;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dot{
+    height: 25px;
+    width: 25px;
+    padding: 3px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mainscreen{
+  /* min-width: 70vw; */
+  padding: 32px;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+dotring{
+    border-radius: 50%;
+    border:2px solid black; 
+  
+}
+
+  .split {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  
+  
+}
+.colors{
+  display: flex;
+  column-gap: 8px;
+  row-gap: 4px;
+  width: 122px;
+  flex-wrap: wrap;
+}
+
+.card {
+  --background:#FFFFFF;
+  --text:black;
+  position: relative;
+  height:12rem;
+  padding: 20px 0px;
+  box-shadow:0 0 2rem -1rem rgba(0,0,0,.05);
+}
+.csscard{
+  margin: 18px 29px 0px ;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  margin: 8px;
+}
+p{
+  margin: 2px;
+}
+.bar {
+  background-color: white;
+  width: 35rem;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.close {
+  font-size: 45px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.container {
+  position: absolute;
+  width:304px;
+  height:150px;
+  
+  border-radius:0.3rem;
+  
+  border: 1px black solid;
+  color:black;
+}
+.groupcolor{
+  display: flex;
+  gap:6rem;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+input {
+  font-size: 10px;
+  font-size: max(10px, 0.8em);
+  font-family: inherit;
+  padding: 0.1em 0.15em;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 6px;
 }
